@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+</head>
+<body>
+    <form method="get">
+        ename : <input type="text" name="ename" placeholder="Enter your name"><br><br>
+        email : <input type="text" name="email" placeholder="Enter your email"><br><br>
+        mobno : <input type="tel" name="mobno" placeholder="Enter your mobile number"><br><br>
+        salary: <input type="text" name="salary" placeholder="Enter your salary"><br><br>
+        
+        <input type="submit" value="Add employee" formaction="/employeeapp/adduser/">
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Show user" formaction="/employeeapp/showuser/">
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Delete user" formaction="/employeeapp/deleteuser/">
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Update user" formaction="/employeeapp/updateuser/">
+
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" value="show all emp" formaction="/employeeapp/showall/">
+        
+
+    </form>
+
+    <span>{{ message }}</span>
+</body>
+</html>
